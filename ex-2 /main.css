@@ -1,195 +1,212 @@
 * {
-	/*box-sizing: border-box;*/
-	background: #111111;
-	margin: 0 auto;
-	/*width: 980px;*/
+  box-sizing: border-box;
+  background: #111111;
+  margin: 0 auto;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
 }
-ul li{
-	display: block;
-	list-style: none;
-	float: left;
-	margin: 20px;
+ul li {
+  display: block;
+  list-style: none;
+  float: left;
+  margin: 20px;
 }
 .kartka-1 {
-	width: 210px;
-	height: 297px;
-	background-color: #f0f1ff;
-	/*background-image: linear-gradient(to top, red 33%, blue 33%, blue 66%, white 66%); //mozna podac kierunek slownie lub w stopniach
-										// potem kolory, idziemy "do gory"*/
-	background-image: linear-gradient(315deg, #111111 50%, blue 50%);
-	background-size: 50px 50px;
-	background-repeat: no-repeat;
-	background-position: 100% 100%;
+  width: 210px;
+  height: 297px;
+  background-color: #f0f1ff;
+  /*background-image: linear-gradient(to top, red 33%, blue 33%, blue 66%, white 66%); //mozna podac kierunek slownie lub w stopniach
+                                      // potem kolory, idziemy "do gory"*/
+  background-image: linear-gradient(315deg, #111111 50%, blue 50%);
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
 .kartka-2 {
-	width: 297px;
-	height: 210px;
-	background-color: #f0f1ff;
-	background-image: radial-gradient(circle, black 10%, transparent 10%), radial-gradient(circle, red 20%, transparent 20%);
-	background-position: 50px 50px, 75px 75px;
-	background-size: 50px 50px;
+  width: 297px;
+  height: 210px;
+  background-color: #f0f1ff;
+  background-image: radial-gradient(circle, black 10%, transparent 10%), radial-gradient(circle, red 20%, transparent 20%);
+  background-position: 50px 50px, 75px 75px;
+  background-size: 50px 50px;
 }
 .kartka-3 {
-	width: 297px;
-	height: 210px;
-	background-color: #f0f1ff;
-	background-image: -moz-radial-gradient(circle, #111111 30%, transparent 30%), -moz-radial-gradient(circle, #111111 30%, transparent 30%), -moz-radial-gradient(circle, #111111 30%, transparent 30%), -moz-radial-gradient(circle, #111111 30%, transparent 30%);
-	background-image: -webkit-radial-gradient(circle, #111111 30%, transparent 30%), -webkit-radial-gradient(circle, #111111 30%, transparent 30%), -webkit-radial-gradient(circle, #111111 30%, transparent 30%), -webkit-radial-gradient(circle, #111111 30%, transparent 30%);
-	background-repeat: no-repeat;
-	background-position: -50px -50px, 247px -50px, -50px 160px, 247px 160px;
-	background-size: 100px 100px;
+  width: 297px;
+  height: 210px;
+  background-color: #f0f1ff;
+  background-image: -moz-radial-gradient(circle, #111111 30%, transparent 30%), -moz-radial-gradient(circle, #111111 30%, transparent 30%), -moz-radial-gradient(circle, #111111 30%, transparent 30%), -moz-radial-gradient(circle, #111111 30%, transparent 30%);
+  background-image: -webkit-radial-gradient(circle, #111111 30%, transparent 30%), -webkit-radial-gradient(circle, #111111 30%, transparent 30%), -webkit-radial-gradient(circle, #111111 30%, transparent 30%), -webkit-radial-gradient(circle, #111111 30%, transparent 30%);
+  background-repeat: no-repeat;
+  background-position: -50px -50px, 247px -50px, -50px 160px, 247px 160px;
+  background-size: 100px 100px;
 }
 .kartka-4 {
-	width: 297px;
-	height: 210px;
-	position: relative;
-	background-color: #f0f1ff;
-	background-image: -moz-linear-gradient(top, #111111 0%, transparent 10%); 
-	background-size: 100% 20px;	
+  width: 297px;
+  height: 210px;
+  position: relative;
+  background-color: #f0f1ff;
+  background-image: -moz-linear-gradient(top, #111111 0%, transparent 10%);
+  background-image: -webkit-linear-gradient(top, #111111 0%, transparent 10%);
+  background-size: 100% 20px;	
 }
 .kartka-4:after {
-	content: '';
-	width: 297px;
-	height: 210px;
-	position: absolute;
-	background-image: -moz-linear-gradient(left, #111111 0%, transparent 10%); 
-	background-size: 20px 100%;		
+  content: '';
+  width: 297px;
+  height: 210px;
+  position: absolute;
+  background-image: -moz-linear-gradient(left, #111111 0%, transparent 10%);
+  background-image: -webkit-linear-gradient(left, #111111 0%, transparent 10%); 
+  background-size: 20px 100%;		
 }
 .kartka-5 {
-	width: 297px;
-	height: 210px;
-	background-color: #f0f1ff;
+  width: 297px;
+  height: 210px;
+  background-color: #f0f1ff;
 
 }
 .close{
-	height: 10px;
-	width: 60px;
-	margin-top: 40px;	
-	background: red;
-	position: relative;
-	cursor: pointer;
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
+  height: 10px;
+  width: 60px;
+  margin-top: 40px;	
+  background: red;
+  position: relative;
+  cursor: pointer;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .close:before{
- 	content: '';
-	height: 10px;
-	width: 60px;	
-	background: red;
-	position: absolute;
-    cursor: pointer;
-	-webkit-transform: rotate(90deg);
-	transform: rotate(90deg);
+  content: '';
+  height: 10px;
+  width: 60px;	
+  background: red;
+  position: absolute;
+  cursor: pointer;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .arrow {
-	height: 10px;
-	width: 60px;
-	margin-top: 40px;	
-	background: red;
-	position: relative;
+  height: 10px;
+  width: 60px;
+  margin-top: 40px;	
+  background: red;
+  position: relative;
 }
 .arrow:before {
-	content:'';
-	height: 10px;
-	width: 30px;
-	margin-left: 36px;
-	margin-top: -7px;
-	position: absolute;	
-	background: red;
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
+  content:'';
+  height: 10px;
+  width: 30px;
+  margin-left: 36px;
+  margin-top: -7px;
+  position: absolute;	
+  background: red;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .arrow:after {
-	content:'';
-	height: 10px;
-	width: 30px;
-	margin-left: 36px;
-	margin-top: 7px;
-	position: absolute;	
-	background: red;
-	-webkit-transform: rotate(-45deg);
-	transform: rotate(-45deg);
+  content:'';
+  height: 10px;
+  width: 30px;
+  margin-left: 36px;
+  margin-top: 7px;
+  position: absolute;	
+  background: red;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
- .flag { 
- 	width: 100px; 
- 	height: 50px; 
- 	background: red; 
- 	position: relative;  	
- } 
- .flag:after { 
- 	content: '';
- 	width: 0px;
- 	height: 0px;
- 	left: 100px; 
- 	position: absolute;
- 	border-bottom: 25px solid transparent; 
- 	border-left: 20px solid red;
- 	border-top: 25px solid transparent; 
- 	border-left: 20px solid red;  	  	 
- }
- .flag-2 {
- 	 fill: white;
- 	 stroke: red;
- 	 stroke-width: 2;
- } 
- .pacman {
- 	width: 100px;
- 	height: 100px;
- 	border-radius: 50%;
- 	border-style: 1px solid #red;
- 	background-color: yellow;
- 	background-image: linear-gradient(#111111 99%, white 99%);
- 	background-size: 50px 50px;
-	background-repeat: no-repeat;
-	-ms-transform: rotate(135deg); /* IE 9 */
-    -webkit-transform: rotate(135deg); /* Safari */
-    transform: rotate(135deg);
- }
- /* cube */
- .cube {
-	position: relative;
-  	top: 200px;
-}
-.right,
-.left,
-.top div {
-	padding: 10px;
-  	width: 180px;
-  	height: 180px;
-
-}
-.right,
-.left,
-.top {
+.flag { 
+  width: 100px; 
+  height: 50px; 
+  background: red; 
+  position: relative;  	
+} 
+.flag:after { 
+  content: '';
+  width: 0px;
+  height: 0px;
+  left: 100px; 
   position: absolute;
+  border-bottom: 25px solid transparent; 
+  border-left: 20px solid red;
+  border-top: 25px solid transparent; 
+  border-left: 20px solid red;  	  	 
 }
-.left {
-  -webkit-transform: skewY(30deg);
-  -moz-transform: skewY(30deg);
-  background-color: #ccc;
+.flag-2 {
+  fill: white;
+  stroke: red;
+  stroke-width: 2;
+} 
+.pacman {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: yellow;
+  background-image: -moz-linear-gradient(#111111 99%, white 99%);
+  background-image: -webkit-linear-gradient(#111111 99%, white 99%);
+  background-image: linear-gradient(#111111 99%, white 99%);
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  -moz-transform: rotate(135deg); 
+  -webkit-transform: rotate(135deg); 
+  transform: rotate(135deg);
 }
-
-.right {
-  -webkit-transform: skewY(-30deg);
-  -moz-transform: skewY(-30deg);
-  transform: skewY(-30deg);
-  background-color: #ddd;
-  left: 200px;
+.cube2d-1st {
+  position: relative;
+  text-align: center;
+  height: 200px;
+  width: 200px;  
+  background-image: linear-gradient(-200deg, transparent 50%, red 50%), linear-gradient(20deg, transparent 50%, red 50%), linear-gradient(200deg, transparent 50%, red 50%), linear-gradient(-20deg, transparent 50%, red 50%);
+  background-position: 0px 7px, 0px 45px, 100px 7px, 100px 45px;
+  background-size: 50% 40px;
+  background-repeat: no-repeat;
 }
-
-.top div {
-  -webkit-transform: skewY(-30deg) scaleY(1.16);
-  -moz-transform: skewY(-30deg) scaleY(1.16);
-  background-color: red;
-  font-size: 0.862em;
+.cube2d-1st:before {
+  content: '';
+  position: absolute;
+  top: 70px;
+  left: 0;
+  height: 49%;
+  width: 49%;
+  background: red;
+  transform: skew(0deg, 20deg);
 }
-
+.cube2d-1st:after {
+  content: '';
+  position: absolute;
+  top: 70px;
+  right: 0;
+  height: 49%;
+  width: 49%;
+  background: red;
+  transform: skew(0deg, -20deg);
+}
+.cube2d-2nd {
+	width: 300px;
+	height: 300px;
+	position: relative;
+	display: block;
+}
 .top {
-  -webkit-transform: rotate(60deg);
-  -moz-transform: rotate(60deg);
-  transform: rotate(0deg);
-  border: 1px solid yellow;
-  top: -158px;
-  background-color: red;
-  left: 200px;
+  width: 300px;
+	height: 300px;
+	position: absolute;
+	background-color: red;
+	transform: rotateX(69.5deg) rotateZ(45deg) translateZ(50px) scale(0.7);
+}
+
+.left {
+	width: 145px;
+	height: 145px;
+	position: absolute;
+	top: 140px;
+	background-color: red;
+	transform: skew(0deg, 20deg);
+}
+.right {
+	width: 145px;
+	height: 145px;
+	position: absolute;
+	top: 140px;
+	left: 155px;
+	background-color: red;
+	transform: skew(0deg, -20deg);
 }
