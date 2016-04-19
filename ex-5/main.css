@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+body {
+  background: #000000;
+  color: #999;
+  box-sizing:border-box;
+  margin: 0 auto;
+  width: 980px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+fieldset {
+  width: 600px;
+  margin: 40px auto 40px auto;
+  padding-left: 40px;
+}
+legend {
+  color: hsl(327, 95%, 35%);
+}
+input, 
+input[type=number] {
+  height: 30px;
+  width: 240px;
+  margin: 0px 0px 20px 0px;
+  border: 2px solid #999;
+  background-color: transparent;
+  font-weight: 300;
+  font-size: 14px;
+  color: #999;
+  padding-left: 10px;
+}
+label {
+  width: 150px;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+input:focus {
+  background-color: hsla(327, 95%, 35%, 0.4);
+}
+
+/**
+HIDE checkbox, radio, file button
+*/
+input[type="checkbox"],
+input[type=file],
+input[type="radio"] {
+  visibility: hidden;
+  overflow: hidden;
+  height: 0;
+  position: absolute;
+}
+input[type=file] {      /*still can be chosen*/
+  display: none;
+}
+/**
+radio, file button, submit button style
+*/
+select,
+.radiobtn label,
+.input-file,
+input[type=submit] {
+  display: inline-block;
+  width: 180px;
+  height: 30px;
+  background: transparent;
+  border: 2px solid #999;
+  border-radius: 0px;
+  color: #999;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
+select:hover {
+  background-color: hsl(327, 95%, 35%);
+}
+.input-file {
+  background-color: hsla(327, 95%, 35%, 0.4);
+  border-color: transparent;
+}
+.fa {
+  margin-left: 5px;
+}
+input[type="radio"]:checked + label {
+  background-color: hsl(327, 95%, 35%);
+  border-color: transparent;
+  transition: 0.5s;
+}
+input[type=range],
+input[type=file] {
+  border: none;
+}
+/**
+checkbox
+*/
+.checkbox label {
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+}
+.checkbox label:before {
+  content:"";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background-color: transparent;
+  border: 2px solid #999;
+}
+input[type=checkbox]:checked + label:before {
+  content:"\2713";
+  font-size: 15px;
+  color: #f3f3f3;
+  text-align: center;
+  line-height: 15px;
+  background-color: hsl(327, 95%, 35%);
+  border-color: transparent;
+}
+/**
+submit
+*/
+input[type=submit]:hover {
+  background: hsl(327, 95%, 35%);
+  border-color: transparent;
+  transition: all 0.4s ease-in-out;
+}
+.error {
+  color: hsla(327, 45%, 65%, 0.4);
+  font-size: 10px;
+}

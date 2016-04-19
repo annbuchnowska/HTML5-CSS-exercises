@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8"/>
+	<title>form - style + validate</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="main.css">	
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+</head>
+<body>
+  <fieldset>
+    <legend>Dane osobowe</legend>
+      <form action="send.php" method="post"  autocomplete="off">
+    		<label for="imie">Imię:</label>        
+    		<input type="text" name="imie" id="imie" placeholder="imię" required/>
+        <br>
+    		<label for="nazwisko">Nazwisko:</label>        
+    		<input type="text" name="nazwisko" id="nazwisko" placeholder="nazwisko" required/>
+    		<br>
+    		<label for="tel">Tel:</label>
+    		<input type="tel" name="tel" id="tel" placeholder="Nr tel." required/>
+    		<br>
+    		<label for="kod">Kod pocztowy:</label>
+    		<input type="text" pattern="[0-9]{2}-[0-9]{3}" name="kod" id="kod" title="dd-ddd" required/>
+    		<br>
+    		<label for="email">Adres email:</label>
+    		<input name="email" id="email" type="email" placeholder="e-mail"required/>
+      	<br>
+      	<label for="miasto">Miasto: </label>
+        <input id="miasto" name="miasto" type="text" placeholder="miasto" list="miasta"/>
+      		<datalist id="miasta">
+     				<option value="Kraków"></option>
+     				<option value="Białystok"></option>
+     				<option value="Warszawa"></option>
+       		</datalist>
+        <br>
+        <label for="panstwo">Państwo:</label>
+       	<select name="panstwo">
+    			<option value="polska">Polska</option>
+    			<option value="niemcy">Niemcy</option>
+    		</select>
+    		<br>
+    		<label for="wiek">Wiek:</label>
+        <input name="wiek" id="wiek" type="number" min="10" max="30" required/>
+      	<br>
+      	<label for="doświadczenie">Doświadczenie:</label>
+        <input id="doswiadczenie" type ="range" min ="0" max="10" step ="1"/>
+      	<br>
+      	<label for="www">Adres strony:</label>
+      	<input id="website" type="url"/>
+      	<br>
+      	<label for="file" class="input-file">Dodaj zdjęcie
+        <i class="fa fa-upload" aria-hidden="true"></i></label>
+      	<input type="file" id="file" name="file" accept="image/*" multiple="true"/>
+      	<br/>
+      	<div class="radiobtn">
+      		<input type="radio" name="plec" id="plecK" value="kobieta"/>
+      		<label for="plecK">Kobieta</label>              
+          <input type="radio" name="plec" id="plecM" value="mezczyzna"/>
+          <label for="plecM">Mężczyzna</label>
+        </div>
+        <div class="checkbox">
+         	
+          <input type="checkbox" name="klauzula" id="klauzula"/>     	
+         	<label for="klauzula">Zgoda...</label>
+        </div>
+        <br>
+    		<input class="submit" type="submit" value="wyślij">
+    	</form>
+  </fieldset>
+	
+<!-- script -->
+<script src="jquery-1.12.1.min.js"></script>
+<script src="jquery.validate.min.js"></script>
+<script src="main.js"></script>
+	
+</body>
+</html>
