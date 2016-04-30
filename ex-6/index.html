@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8"/>
+	<title>media</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="main.css">		
+</head>
+<body>
+	<!--<audio controls="controls" autoplay="true" loop="loop" volume="0.5">
+  		<source src="video/horse.mp3" type="audio/mp3" />
+  		<source src="video/horse.ogg" type="audio/ogg" />
+		Your browser does not support the audio element.
+	</audio>-->
+	<video id="player" width="600px"  poster="video/poster.png">
+		<source src="video/movie.mp4#t2,8" type="video/mp4"/>
+		<source src="video/movie.ogg#t2,8" type="video/ogg"/>
+		<track src="video/devstories-en.vtt" kind="subtitles" srclang="en" label="English">
+		Your browser does not support the audio element.
+	</video>
+	<br>
+	<div id="controls">
+	    <button id="play" onClick="playVideo()">Play</button>
+	    <button id="pause" onClick="pauseVideo()">Pause</button>
+        <button id="stop">Stop</button>
+        <button id="plus" title="Volum">Up</button>
+        <button id="minus" title="Volum">Down</button>
+        <button id="mute">Mute</button>
+     </div>
+     <br>
+     <div id="progressbar">
+        <div id="progress"></div>               
+     </div>
+	 
+
+<!-- script -->
+<script>
+	var vid = document.getElementById("player"); 
+	function playVideo() { 
+    	vid.play(); 
+	} 
+	function pauseVideo() { 
+    	vid.pause(); 
+	} 
+	
+</script>
+	
+</body>
+</html>

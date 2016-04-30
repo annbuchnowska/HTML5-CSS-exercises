@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+body {
+  background: #000000;
+  color: #999;
+  box-sizing:border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  
+}
+video {
+  border: 1px solid #9673dd;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  transition: all 1s ease-in-out;
+}
+/** hide controls*/
+#controls {   
+  position: absolute;
+  margin-left: 20px;
+} 
+/* style for  buttons */
+#play, #stop, #pause, #plus, #minus, #mute {
+  border: 1px solid #9673dd;
+  background-color: #9673dd;
+  padding: 5px;
+  border-radius: 5px;
+  width: 50px;
+  margin: 0 5px 0 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+}
+#progressbar {
+  width: 640px;
+  height: 10px;
+  border: 1px solid #9673dd;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
+  position: relative;
+}
+#progress {
+  border-radius: 10px;
+  height: 10px;
+  width: 10px;
+  background-color: #9673dd;
+}
